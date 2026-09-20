@@ -69,14 +69,15 @@ def recognize(source: str | Path, output: str | Path | None = None, *, language:
               runner: Callable[..., subprocess.CompletedProcess[str]] = subprocess.run) -> OcrResult:
     src = validate_input(Path(source))
     executable = find_tesseract(tesseract)
-    suffix = ".html" if fmt == "hocr" else f".{fmt}"
+    if fmt not in FORMATS:
+        raise OcrError(f"Unsupported output format: {fmt}")
+    suffix = f".{fmt}"
     target = Path(output).expanduser().resolve() if output else src.with_name(src.stem + ".ocr" + suffix)
     if target == src:
         raise OcrError("Output must not overwrite the source image")
     if target.exists() and not overwrite:
         raise OcrError(f"Output already exists: {target}. Use --overwrite to replace it.")
     target.parent.mkdir(parents=True, exist_ok=True)
-    # Tesseract appends the renderer extension; use a temporary base to avoid partial final files.
     temp_base = target.parent / ("." + target.name + ".ocrdesk-tmp")
     generated = Path(str(temp_base) + suffix)
     generated.unlink(missing_ok=True)
