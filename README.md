@@ -2,19 +2,26 @@
 
 <img src="assets/ocr-desk-brand-cover.svg" alt="OCR Desk — Radwan Abdulhadi Ahmed" width="100%" />
 
+<br/>
+
 # OCR Desk
 
 ### Local-first OCR for reliable document workflows
 
-**استخراج النصوص من الصور محليًا — ببساطة، خصوصية، ونتائج قابلة للأتمتة**
+**استخراج النصوص من الصور محليًا — بخصوصية، وضوح، وتحكم كامل**
+
+<br/>
 
 [![CI](https://github.com/rad03i2/ocr-desk/actions/workflows/ci.yml/badge.svg)](https://github.com/rad03i2/ocr-desk/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
-![Version](https://img.shields.io/badge/Version-1.0.0-informational)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-![Privacy](https://img.shields.io/badge/Privacy-Local--First-blue)
+![Tesseract](https://img.shields.io/badge/OCR-Tesseract-19D3FF)
+![Platforms](https://img.shields.io/badge/Platforms-Windows%20%7C%20Linux%20%7C%20macOS-4F8CFF)
+![License](https://img.shields.io/badge/License-MIT-35C98A)
+![Privacy](https://img.shields.io/badge/Privacy-Local--First-00CFEA)
 
-**[العربية](README_AR.md) · [English](README_EN.md) · [Changelog](CHANGELOG.md) · [Security](SECURITY.md)**
+**[🇮🇶 العربية](README_AR.md) · [🇬🇧 English](README_EN.md) · [🧭 Roadmap](ROADMAP.md) · [🧩 Architecture](docs/ARCHITECTURE.md) · [💬 Support](SUPPORT.md)**
+
+<sub>Part of the personal <strong>Rad03i2</strong> project identity · Built by <strong>Radwan Abdulhadi Ahmed</strong></sub>
 
 </div>
 
@@ -22,36 +29,26 @@
 
 <div dir="rtl" align="right">
 
-## 🇮🇶 نبذة سريعة
+## ✦ المشروع في سطر واحد
 
-**OCR Desk** أداة خفيفة تعمل محليًا على جهازك لاستخراج النصوص من صور المستندات وإنشاء ملفات قابلة للبحث. صُممت لمن يريد طريقة واضحة وآمنة للتعرّف على النصوص من دون رفع المستندات إلى خدمة سحابية.
-
-### لماذا هذا المشروع؟
-
-- يحافظ على المستندات داخل جهاز المستخدم.
-- يدعم العربية والإنجليزية ولغات أخرى عند تثبيت حزمها.
-- يحمي الصورة الأصلية من التعديل غير المقصود.
-- يمنع استبدال ملفات الإخراج الموجودة بصورة افتراضية.
-- يصلح للاستخدام اليدوي أو داخل السكربتات والأتمتة.
-- يعمل عبر أنظمة تشغيل متعددة ويخضع لاختبارات آلية.
-
-### صيغ الإدخال والإخراج
+**OCR Desk** أداة سطر أوامر خفيفة لتحويل صور المستندات إلى نصوص وملفات قابلة للبحث، مع إبقاء عملية التعرّف على جهاز المستخدم من خلال محرك تيسراكت المثبّت محليًا.
 
 </div>
 
-<div align="center">
+<table>
+<tr>
+<td width="25%" align="center"><strong>🔐 محلي أولًا</strong><br/><sub>لا يحتاج المشروع إلى رفع المستندات لخدمة تعرّف سحابية</sub></td>
+<td width="25%" align="center"><strong>🌍 متعدد اللغات</strong><br/><sub>العربية والإنجليزية وأي حزمة لغة مثبتة في تيسراكت</sub></td>
+<td width="25%" align="center"><strong>⚙️ قابل للأتمتة</strong><br/><sub>أوامر واضحة ونتائج منظمة يمكن استخدامها في السكربتات</sub></td>
+<td width="25%" align="center"><strong>🛡️ آمن افتراضيًا</strong><br/><sub>حماية من الاستبدال غير المقصود للملفات</sub></td>
+</tr>
+</table>
 
-| Input | Output |
-|:---:|:---:|
-| PNG · JPEG · TIFF · BMP · WebP | TXT · TSV · hOCR · Searchable PDF |
+---
 
-</div>
+## ⚡ 30-second start
 
-<div dir="rtl" align="right">
-
-### تشغيل سريع
-
-</div>
+> OCR Desk requires **Tesseract OCR** to be installed locally before recognition can run.
 
 ```bash
 git clone https://github.com/rad03i2/ocr-desk.git
@@ -62,7 +59,7 @@ ocr-desk --version
 
 <div dir="rtl" align="right">
 
-استخراج نص عربي وإنجليزي من صورة:
+### استخراج نص عربي وإنجليزي
 
 </div>
 
@@ -72,7 +69,7 @@ ocr-desk scan document.jpg -l ara+eng -o document.txt
 
 <div dir="rtl" align="right">
 
-إنشاء ملف قابل للبحث:
+### إنشاء ملف قابل للبحث
 
 </div>
 
@@ -82,86 +79,128 @@ ocr-desk scan page.tif -l ara -f pdf -o page-searchable.pdf
 
 <div dir="rtl" align="right">
 
-### الخصوصية أولًا
+### معرفة اللغات المثبتة
 
-المعالجة تتم على جهازك من خلال محرك التعرّف المثبّت محليًا. المشروع نفسه لا يحتاج إلى حساب مستخدم أو مفتاح وصول، ولا يرسل المستندات إلى خدمة خارجية.
+</div>
 
-> **للدليل العربي الكامل:** [README_AR.md](README_AR.md)
+```bash
+ocr-desk languages
+```
+
+---
+
+## ◈ What OCR Desk handles
+
+| Capability | Current support |
+|---|---|
+| Image input | PNG · JPEG · TIFF · BMP · WebP |
+| Plain text output | TXT |
+| Structured OCR output | TSV · hOCR |
+| Searchable document output | PDF |
+| Multiple OCR languages | ✅ |
+| Arabic + English recognition | ✅ when language packs are installed |
+| Page segmentation control | ✅ `--psm` |
+| OCR engine-mode control | ✅ `--oem` |
+| JSON completion result | ✅ `--json` |
+| Explicit Tesseract path | ✅ `--tesseract` |
+| Existing-output protection | ✅ default behavior |
+| Batch-directory mode | 🔭 Roadmap |
+| Desktop GUI | 🔭 Roadmap |
+| Image preprocessing | 🔭 Roadmap |
+
+---
+
+<div dir="rtl" align="right">
+
+## 🔐 الخصوصية ليست إضافة جانبية
+
+المشروع لا يحتاج إلى حساب مستخدم أو مفتاح واجهة برمجية لخدمة تعرّف خارجية. عملية التعرّف نفسها تُنفّذ عبر ملف تيسراكت التنفيذي الموجود على جهازك، والصورة الأصلية لا تُعدّل عمدًا.
+
+هذا لا يعني أن الناتج غير حساس: النص المستخرج قد يحتوي معلومات خاصة، لذلك يجب التعامل مع ملفات الإخراج بنفس مستوى حماية المستند الأصلي.
+
+**التفاصيل:** [سياسة الأمان](SECURITY.md)
 
 </div>
 
 ---
 
-## 🇬🇧 English overview
+## 🧪 Tested across platforms
 
-OCR Desk is a dependable local-first command-line workspace for extracting text from document images and producing searchable output through an installed Tesseract engine.
+The GitHub Actions matrix installs the package, runs the test suite, and performs a CLI smoke test across:
 
-### Highlights
+| Operating system | Python versions |
+|---|---|
+| Ubuntu | 3.10 · 3.12 · 3.13 |
+| Windows | 3.10 · 3.12 · 3.13 |
+| macOS | 3.10 · 3.12 · 3.13 |
 
-- Local document processing with no OCR uploads performed by the project.
-- Arabic, English, and multi-language recognition.
-- TXT, TSV, hOCR, and searchable PDF output.
-- Safe output handling and source-file protection.
-- JSON results for scripts and automation.
-- Cross-platform automated testing.
-
-Quick example:
-
-```bash
-ocr-desk scan receipt.jpg -l ara+eng -o receipt.txt
-```
-
-> **Full English guide:** [README_EN.md](README_EN.md)
+That gives the repository a **9-environment CI matrix** for the currently configured workflow.
 
 ---
 
-## Project status
-
-| Area | Status |
-|---|---|
-| Core CLI | ✅ Ready |
-| Automated tests | ✅ Included |
-| Cross-platform CI | ✅ Included |
-| Arabic documentation | ✅ Included |
-| English documentation | ✅ Included |
-| Local-first privacy | ✅ Included |
-| Desktop GUI | 🔭 Future |
-| Batch directory mode | 🔭 Future |
-| Image preprocessing | 🔭 Future |
-
-## Repository map
+## 🗺️ Repository experience
 
 ```text
 ocr-desk/
-├── assets/                # Branded visual identity
-├── src/ocr_desk/          # Application source
-├── tests/                 # Automated tests
-├── .github/workflows/     # Cross-platform CI
-├── README_AR.md           # الدليل العربي الكامل
-├── README_EN.md           # Full English guide
-├── CONTRIBUTING.md        # Contribution guide
-├── SECURITY.md            # Security policy
-├── CHANGELOG.md           # Release history
-└── LICENSE                # MIT License
+├── assets/                    branded visual identity
+├── docs/
+│   ├── ARCHITECTURE.md        technical architecture
+│   └── BRAND.md               Rad03i2 visual rules
+├── src/ocr_desk/              application source
+├── tests/                     automated tests
+├── .github/
+│   ├── ISSUE_TEMPLATE/        bug / feature forms
+│   ├── PULL_REQUEST_TEMPLATE.md
+│   └── workflows/             CI
+├── README_AR.md               الدليل العربي الكامل
+├── README_EN.md               full English guide
+├── ROADMAP.md                 future direction
+├── SUPPORT.md                 support guide
+├── SECURITY.md                security policy
+├── CONTRIBUTING.md            contribution guide
+├── CODE_OF_CONDUCT.md         community expectations
+├── CHANGELOG.md               release history
+└── LICENSE                    MIT License
 ```
 
-## Documentation
+---
 
-- 🇮🇶 [الدليل العربي الكامل](README_AR.md)
-- 🇬🇧 [Full English guide](README_EN.md)
-- 🧪 [Contributing](CONTRIBUTING.md)
-- 🔐 [Security policy](SECURITY.md)
-- 📝 [Changelog](CHANGELOG.md)
-- 📄 [MIT License](LICENSE)
+## 📚 Explore the project
+
+| Resource | Purpose |
+|---|---|
+| [🇮🇶 README_AR.md](README_AR.md) | الدليل العربي الكامل |
+| [🇬🇧 README_EN.md](README_EN.md) | Complete English guide |
+| [🧭 ROADMAP.md](ROADMAP.md) | Planned evolution and future ideas |
+| [🧩 Architecture](docs/ARCHITECTURE.md) | How the CLI, core, Tesseract, and output flow connect |
+| [✦ Brand identity](docs/BRAND.md) | Visual identity and Rad03i2 presentation rules |
+| [💬 SUPPORT.md](SUPPORT.md) | Troubleshooting and support guidance |
+| [🧪 CONTRIBUTING.md](CONTRIBUTING.md) | Contribution workflow |
+| [🔐 SECURITY.md](SECURITY.md) | Security and privacy guidance |
+| [📝 CHANGELOG.md](CHANGELOG.md) | Release history |
+
+---
+
+## 🧭 Direction
+
+OCR Desk intentionally starts with a small, dependable command-line surface. Future work is organized around three areas: better batch usability, optional image preparation, and a possible lightweight desktop experience — without sacrificing the local-first CLI foundation.
+
+**See the full direction:** [ROADMAP.md](ROADMAP.md)
 
 ---
 
 <div align="center">
 
-### Developed by Radwan Abdulhadi Ahmed
+### ✦ A Rad03i2 Project
 
-**رضوان عبدالهادي أحمد** · **@rad03i2**
+**Radwan Abdulhadi Ahmed**  
+**رضوان عبدالهادي أحمد**  
+**[@rad03i2](https://github.com/rad03i2)**
 
-Built with a focus on reliability, privacy, and clear documentation.
+`SIMPLE TOOLS · REAL IMPACT`
+
+<br/>
+
+Built with a focus on **privacy · reliability · clarity · automation**
 
 </div>
