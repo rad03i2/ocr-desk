@@ -1,14 +1,25 @@
-<div dir="rtl" align="right">
+<div align="center">
+
+<img src="assets/ocr-desk-brand-cover.svg" alt="OCR Desk — رضوان عبدالهادي أحمد" width="100%" />
 
 # OCR Desk — الدليل العربي
 
 **أداة محلية لاستخراج النصوص من الصور وإنشاء مستندات قابلة للبحث مع الحفاظ على الخصوصية.**
 
-[العودة إلى الصفحة الرئيسية](README.md)
+[![CI](https://github.com/rad03i2/ocr-desk/actions/workflows/ci.yml/badge.svg)](https://github.com/rad03i2/ocr-desk/actions/workflows/ci.yml)
+![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
+![Privacy](https://img.shields.io/badge/Privacy-Local--First-00CFEA)
+![License](https://img.shields.io/badge/License-MIT-35C98A)
+
+**[الصفحة الرئيسية](README.md) · [الدليل الإنجليزي](README_EN.md) · [خارطة الطريق](ROADMAP.md) · [الدعم](SUPPORT.md)**
+
+</div>
 
 ---
 
-## ما هو المشروع؟
+<div dir="rtl" align="right">
+
+## ✦ ما هو المشروع؟
 
 OCR Desk أداة تعمل من سطر الأوامر على جهازك مباشرة. وظيفتها تحويل صور المستندات إلى نصوص قابلة للنسخ والبحث، أو إنشاء ملفات مستندية يمكن البحث داخلها، من دون إرسال الصور أو النصوص إلى خدمة خارجية.
 
@@ -23,7 +34,7 @@ OCR Desk أداة تعمل من سطر الأوامر على جهازك مباش
 - تنفيذ المعالجة محليًا عندما تكون الخصوصية مهمة.
 - الحصول على سلوك ثابت وقابل للتكرار بدل كتابة أوامر طويلة في كل مرة.
 
-## أهم المزايا
+## ◈ أهم المزايا
 
 - معالجة محلية بالكامل على جهاز المستخدم.
 - دعم عدة صيغ شائعة للصور.
@@ -37,24 +48,25 @@ OCR Desk أداة تعمل من سطر الأوامر على جهازك مباش
 
 ## صيغ الإدخال
 
+</div>
+
 ```text
-PNG
-JPEG
-TIFF
-BMP
-WebP
+PNG · JPEG · TIFF · BMP · WebP
 ```
+
+<div dir="rtl" align="right">
 
 ## صيغ الإخراج
 
+</div>
+
 ```text
-TXT
-TSV
-hOCR
-Searchable PDF
+TXT · TSV · hOCR · Searchable PDF
 ```
 
-## المتطلبات
+<div dir="rtl" align="right">
+
+## ⚙️ المتطلبات
 
 - بايثون، الإصدار 3.10 أو أحدث.
 - محرك تيسراكت مثبت على الجهاز.
@@ -62,11 +74,17 @@ Searchable PDF
 
 تحقق من تثبيت المحرك:
 
+</div>
+
 ```bash
 tesseract --version
 ```
 
-## التثبيت
+<div dir="rtl" align="right">
+
+## 🚀 التثبيت
+
+</div>
 
 ```bash
 git clone https://github.com/rad03i2/ocr-desk.git
@@ -75,67 +93,103 @@ python -m pip install -e .
 ocr-desk --version
 ```
 
-## تشغيل سريع
+<div dir="rtl" align="right">
+
+## ⚡ تشغيل سريع
 
 ### استخراج نص من صورة
+
+</div>
 
 ```bash
 ocr-desk scan scan.png
 ```
 
+<div dir="rtl" align="right">
+
 ### استخراج نص عربي وإنجليزي
+
+</div>
 
 ```bash
 ocr-desk scan document.jpg -l ara+eng -o document.txt
 ```
 
+<div dir="rtl" align="right">
+
 ### إنشاء ملف قابل للبحث
+
+</div>
 
 ```bash
 ocr-desk scan page.tif -l ara -f pdf -o page-searchable.pdf
 ```
 
+<div dir="rtl" align="right">
+
 ### عرض اللغات المثبتة
+
+</div>
 
 ```bash
 ocr-desk languages
 ```
 
+<div dir="rtl" align="right">
+
 ### استخدام إعداد تحليل صفحة محدد
+
+</div>
 
 ```bash
 ocr-desk scan page.png --psm 6
 ```
 
+<div dir="rtl" align="right">
+
 ### الحصول على بيانات نتيجة منظمة
+
+</div>
 
 ```bash
 ocr-desk scan page.png --json
 ```
 
+<div dir="rtl" align="right">
+
 ### تشغيله على ويندوز عند عدم إضافة المحرك إلى مسار النظام
+
+</div>
 
 ```powershell
 ocr-desk --tesseract "C:\Program Files\Tesseract-OCR\tesseract.exe" scan page.png -l ara
 ```
 
-## حماية الملفات
+<div dir="rtl" align="right">
+
+## 🛡️ حماية الملفات
 
 المشروع مصمم لتقليل أخطاء الاستبدال غير المقصود. إذا كان ملف الإخراج موجودًا مسبقًا فلن يتم استبداله افتراضيًا.
 
 عندما يكون الاستبدال مقصودًا فقط، يمكن استخدام:
 
+</div>
+
 ```text
 --overwrite
 ```
 
-## الخصوصية
+<div dir="rtl" align="right">
+
+## 🔐 الخصوصية
 
 المعالجة تتم على جهازك من خلال المحرك المحلي. المشروع نفسه لا يرفع الصورة أو النص الناتج إلى الإنترنت ولا يحتاج إلى حساب مستخدم أو مفتاح وصول.
 
 مع ذلك، قد يحتوي النص الناتج معلومات حساسة، لذلك يجب التعامل مع ملفات الإخراج بنفس مستوى الحماية الذي تتعامل به مع المستند الأصلي.
 
-## بنية المشروع
+## 🧩 بنية المشروع
+
+</div>
 
 ```text
 src/ocr_desk/core.py    منطق التحقق وبناء الأوامر وحماية الإخراج
@@ -144,15 +198,23 @@ tests/test_core.py      اختبارات السلوك الأساسي
 .github/workflows/      اختبارات التكامل المستمر
 ```
 
-## الاختبارات
+<div dir="rtl" align="right">
+
+لشرح أعمق لتدفق المشروع راجع: [معمارية المشروع](docs/ARCHITECTURE.md).
+
+## 🧪 الاختبارات
+
+</div>
 
 ```bash
 python -m unittest discover -s tests -v
 ```
 
+<div dir="rtl" align="right">
+
 تم تصميم الاختبارات بحيث لا تحتاج إلى تشغيل تيسراكت فعليًا في كل حالة، إذ تتم محاكاة التنفيذ عندما يكون ذلك مناسبًا.
 
-كما يتم اختبار المشروع آليًا على عدة أنظمة تشغيل وإصدارات من بايثون.
+كما يختبر GitHub Actions الحزمة على ويندوز وأوبونتو وmacOS عبر عدة إصدارات من بايثون.
 
 ## القيود الحالية
 
@@ -162,27 +224,37 @@ python -m unittest discover -s tests -v
 - لا توجد واجهة رسومية في الإصدار الحالي.
 - لا توجد معالجة مباشرة لمجلد كامل في أمر واحد حاليًا.
 
-## تطويرات مقترحة مستقبلًا
+## 🧭 مستقبل المشروع
 
-- معالجة عدة صور دفعة واحدة.
-- تحسين الصور قبل التعرّف بصورة اختيارية.
-- واجهة سطح مكتب خفيفة.
-- خيارات إضافية لتسهيل التعامل مع المستندات الكبيرة.
+التطويرات المستقبلية موثقة بصورة منفصلة حتى تبقى الميزات الحالية واضحة ولا تختلط بالأفكار القادمة.
 
-## الأمان والمساهمة
+**راجع:** [ROADMAP.md](ROADMAP.md)
 
+## 📚 ملفات مهمة
+
+- [دليل الدعم](SUPPORT.md)
 - [سياسة الأمان](SECURITY.md)
 - [دليل المساهمة](CONTRIBUTING.md)
+- [خارطة الطريق](ROADMAP.md)
+- [معمارية المشروع](docs/ARCHITECTURE.md)
+- [هوية المشروع](docs/BRAND.md)
 - [سجل التغييرات](CHANGELOG.md)
-
-## الترخيص
-
-المشروع متاح تحت ترخيص MIT. راجع ملف [LICENSE](LICENSE) للتفاصيل.
+- [الترخيص](LICENSE)
 
 ## المطور
 
 **رضوان عبدالهادي أحمد**  
 **Radwan Abdulhadi Ahmed**  
 GitHub: **@rad03i2**
+
+</div>
+
+---
+
+<div align="center">
+
+### ✦ A Rad03i2 Project
+
+`SIMPLE TOOLS · REAL IMPACT`
 
 </div>
