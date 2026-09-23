@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/ocr-desk-brand-cover.svg" alt="OCR Desk — Radwan Abdulhadi Ahmed" width="100%" />
+
 # OCR Desk
 
 ### Local-first OCR for reliable document workflows
@@ -131,6 +133,7 @@ ocr-desk scan receipt.jpg -l ara+eng -o receipt.txt
 
 ```text
 ocr-desk/
+├── assets/                # Branded visual identity
 ├── src/ocr_desk/          # Application source
 ├── tests/                 # Automated tests
 ├── .github/workflows/     # Cross-platform CI
