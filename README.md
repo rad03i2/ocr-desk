@@ -13,6 +13,7 @@
 <br/>
 
 [![CI](https://github.com/rad03i2/ocr-desk/actions/workflows/ci.yml/badge.svg)](https://github.com/rad03i2/ocr-desk/actions/workflows/ci.yml)
+![Version](https://img.shields.io/badge/Version-1.0.0-5A8CFF)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
 ![Tesseract](https://img.shields.io/badge/OCR-Tesseract-19D3FF)
 ![Platforms](https://img.shields.io/badge/Platforms-Windows%20%7C%20Linux%20%7C%20macOS-4F8CFF)
@@ -87,6 +88,14 @@ ocr-desk scan page.tif -l ara -f pdf -o page-searchable.pdf
 ocr-desk languages
 ```
 
+<div align="center">
+
+### Terminal preview
+
+<img src="assets/ocr-desk-terminal.svg" alt="OCR Desk branded terminal preview" width="96%" />
+
+</div>
+
 ---
 
 ## ◈ What OCR Desk handles
@@ -143,6 +152,9 @@ That gives the repository a **9-environment CI matrix** for the currently config
 ```text
 ocr-desk/
 ├── assets/                    branded visual identity
+│   ├── ocr-desk-brand-cover.svg
+│   ├── ocr-desk-terminal.svg
+│   └── rad03i2-signature.svg
 ├── docs/
 │   ├── ARCHITECTURE.md        technical architecture
 │   └── BRAND.md               Rad03i2 visual rules
@@ -150,7 +162,9 @@ ocr-desk/
 ├── tests/                     automated tests
 ├── .github/
 │   ├── ISSUE_TEMPLATE/        bug / feature forms
+│   ├── CODEOWNERS             repository ownership
 │   ├── PULL_REQUEST_TEMPLATE.md
+│   ├── release.yml            release-note categories
 │   └── workflows/             CI
 ├── README_AR.md               الدليل العربي الكامل
 ├── README_EN.md               full English guide
@@ -190,6 +204,8 @@ OCR Desk intentionally starts with a small, dependable command-line surface. Fut
 ---
 
 <div align="center">
+
+<img src="assets/rad03i2-signature.svg" alt="Rad03i2 — Radwan Abdulhadi Ahmed" width="420" />
 
 ### ✦ A Rad03i2 Project
 
