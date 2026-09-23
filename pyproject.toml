@@ -6,10 +6,29 @@ build-backend = "setuptools.build_meta"
 name = "ocr-desk"
 version = "1.0.0"
 description = "A local-first command-line workspace for reliable Tesseract OCR workflows."
+readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
 authors = [{name = "Radwan Abdulhadi Ahmed"}]
-keywords = ["ocr", "tesseract", "cli", "privacy"]
+keywords = ["ocr", "tesseract", "cli", "privacy", "arabic", "automation", "searchable-pdf"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Multimedia :: Graphics :: Capture :: Scanners",
+    "Topic :: Text Processing",
+]
+
+[project.urls]
+Homepage = "https://github.com/rad03i2/ocr-desk"
+Repository = "https://github.com/rad03i2/ocr-desk"
+Issues = "https://github.com/rad03i2/ocr-desk/issues"
+Changelog = "https://github.com/rad03i2/ocr-desk/blob/main/CHANGELOG.md"
 
 [project.scripts]
 ocr-desk = "ocr_desk.cli:main"
