@@ -1,0 +1,35 @@
+name: Feature request
+description: Suggest an improvement for OCR Desk
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an improvement. Please keep proposals focused and compatible with the local-first design of OCR Desk.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: What problem would this feature solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the behavior you would like to see.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Optional approaches or workarounds you have considered.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Local-first compatibility
+      options:
+        - label: This proposal can preserve local document processing and user privacy.
+          required: true
