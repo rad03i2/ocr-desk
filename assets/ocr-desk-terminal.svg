@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="620" viewBox="0 0 1400 620" role="img" aria-labelledby="title desc">
+  <title id="title">OCR Desk terminal preview</title>
+  <desc id="desc">A branded terminal example showing local OCR commands.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#030814"/>
+      <stop offset="1" stop-color="#071a2d"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#19e5ff"/>
+      <stop offset="1" stop-color="#3a7bff"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="620" rx="34" fill="url(#bg)"/>
+  <rect x="1.5" y="1.5" width="1397" height="617" rx="32.5" fill="none" stroke="#1cbef5" stroke-opacity=".28" stroke-width="3"/>
+
+  <rect x="34" y="32" width="1332" height="78" rx="20" fill="#0a1d31"/>
+  <circle cx="72" cy="71" r="10" fill="#ff6b6b"/>
+  <circle cx="104" cy="71" r="10" fill="#ffd166"/>
+  <circle cx="136" cy="71" r="10" fill="#55d187"/>
+  <text x="700" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#dcecff">OCR Desk · local session</text>
+
+  <g font-family="Consolas, Menlo, monospace" font-size="27">
+    <text x="72" y="170" fill="#4fdcff">$</text>
+    <text x="108" y="170" fill="#eef7ff">ocr-desk --version</text>
+    <text x="108" y="210" fill="#8ca9c0">OCR Desk 1.0.0</text>
+
+    <text x="72" y="280" fill="#4fdcff">$</text>
+    <text x="108" y="280" fill="#eef7ff">ocr-desk languages</text>
+    <text x="108" y="320" fill="#8ca9c0">ara</text>
+    <text x="180" y="320" fill="#8ca9c0">eng</text>
+
+    <text x="72" y="390" fill="#4fdcff">$</text>
+    <text x="108" y="390" fill="#eef7ff">ocr-desk scan document.jpg -l ara+eng -o document.txt</text>
+    <text x="108" y="430" fill="#77e8ad">OCR complete: document.txt</text>
+
+    <text x="72" y="500" fill="#4fdcff">$</text>
+    <text x="108" y="500" fill="#eef7ff">ocr-desk scan page.tif -l ara -f pdf -o page-searchable.pdf</text>
+    <text x="108" y="540" fill="#77e8ad">OCR complete: page-searchable.pdf</text>
+  </g>
+
+  <path d="M1040 152h230" stroke="url(#cyan)" stroke-width="3" opacity=".5"/>
+  <text x="1272" y="178" text-anchor="end" font-family="Arial, sans-serif" font-size="18" letter-spacing="4" fill="#63a9cb">LOCAL • PRIVATE • SCRIPTABLE</text>
+
+  <text x="1328" y="584" text-anchor="end" font-family="Arial, sans-serif" font-size="20" font-style="italic" font-weight="700" fill="#55a7ff" filter="url(#glow)">Rad03i2</text>
+</svg>
