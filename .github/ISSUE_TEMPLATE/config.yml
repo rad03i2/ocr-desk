@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Support guide / دليل الدعم
+    url: https://github.com/rad03i2/ocr-desk/blob/main/SUPPORT.md
+    about: Check installation and troubleshooting guidance before opening an issue.
+  - name: Security policy / سياسة الأمان
+    url: https://github.com/rad03i2/ocr-desk/blob/main/SECURITY.md
+    about: Read the security guidance before sharing potentially sensitive details.
+  - name: Project roadmap / خارطة الطريق
+    url: https://github.com/rad03i2/ocr-desk/blob/main/ROADMAP.md
+    about: Review planned directions before proposing a large feature.
