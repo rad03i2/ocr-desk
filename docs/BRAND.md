@@ -1,71 +1,98 @@
-<div align="center">
+# OCR Desk Brand System
 
-# ✦ OCR Desk Brand Identity
+OCR Desk uses an **Optical Grid / Editorial Technical** identity. The system is intentionally different from a neon cyber dashboard: it borrows from printed documents, scanning marks, editorial layouts, and precise technical grids.
 
-### Personal project identity by Radwan Abdulhadi Ahmed · @rad03i2
+## Identity idea
 
-</div>
+The visual story is simple:
 
-## Brand idea
+**paper → scan → structured text**
 
-OCR Desk should feel **precise, private, modern, calm, and technical**. The visual system is deliberately personal: dark navy surfaces, cyan/blue light, clean document geometry, and the `Rad03i2` signature mark.
+The logo combines three recognizable OCR cues without spelling the product name:
 
-## Core visual language
+- document geometry;
+- optical scan corners;
+- a horizontal recognition line.
 
-| Element | Direction |
-|---|---|
-| Primary background | Deep navy / near black |
-| Primary accent | Electric cyan |
-| Secondary accent | Bright technical blue |
-| Main text | Soft white |
-| Secondary text | Cool gray-blue |
-| Shapes | Rounded panels, scan corners, document geometry |
-| Mood | Premium, focused, futuristic, local-first |
+That makes the mark readable as an app icon, repository card, or small avatar.
 
-## Signature elements
+## Palette
 
-Use these consistently across repository visuals:
+| Role | Color | Hex |
+|---|---|---|
+| Paper | Warm ivory | `#F7F4EC` |
+| Ink | Midnight navy | `#14213D` |
+| Primary | Cobalt blue | `#2563EB` |
+| Accent | Signal coral | `#F05A47` |
+| Soft surface | Porcelain | `#FFFDF8` |
+| Secondary line/text | Cool slate | `#6C7483` |
 
-- `OCR Desk` as the product name.
-- `Rad03i2` as the personal signature mark.
-- `@rad03i2` as the developer handle.
-- `Radwan Abdulhadi Ahmed` / `رضوان عبدالهادي أحمد` in author blocks.
-- Scan-corner motifs around document imagery.
-- A physical-document → digital-text transformation concept.
+### Why these colors
 
-## Preferred copy
+- **Ivory** connects the interface to paper and scanned documents.
+- **Midnight navy** provides technical seriousness without looking like a generic black cyber theme.
+- **Cobalt** represents detection, selection, and optical focus.
+- **Signal coral** is reserved for the scan line and important visual emphasis.
 
-**English:**
+## Typography direction
 
-> Local-first OCR for reliable document workflows
+Repository artwork uses common system-safe sans-serif typography so SVG assets render reliably on GitHub.
 
-**Arabic:**
+- Headlines: bold geometric sans-serif.
+- Supporting text: clean sans-serif.
+- Commands: monospace.
+- Arabic: kept on separate lines or blocks when needed to protect readability and direction.
 
-> استخراج النصوص من الصور محليًا
+## Canonical assets
 
-**Personal line:**
+### Hero cover
 
-> Simple tools. Real impact.
+`assets/project-cover.svg`
+
+Use at the top of the main README and language guides. It is a vector asset designed for GitHub rendering and responsive scaling.
+
+### Square logo
+
+`assets/project-logo.svg`
+
+Use for repository cards, profile-style placement, application icon concepts, and small visual identifiers.
+
+### Terminal preview
+
+`assets/ocr-desk-terminal.svg`
+
+A realistic command-line presentation using the same navy, cobalt, ivory, and coral palette.
+
+## Logo usage
+
+- Keep the square proportions.
+- Do not stretch the mark.
+- Do not recolor individual elements casually.
+- Preserve sufficient padding around the outer rounded square.
+- At small sizes, prefer the logo alone instead of adding the product name inside it.
+
+## Cover usage
+
+- Keep the full composition intact.
+- Avoid placing unrelated badges or text on top of the SVG itself.
+- Place badges and navigation below the image in Markdown.
+- The developer credit is intentionally present once in the cover and once in the repository author block, not repeated across every section.
 
 ## Repository presentation rules
 
-1. Keep the first screen of the README visually clean.
-2. Avoid mixing long Arabic and English sentences on the same line.
-3. Put technical commands in code blocks rather than inside Arabic prose.
-4. Use the branded cover before badges and technical details.
-5. Prefer a few strong sections over a very long wall of text.
-6. Keep future features clearly labeled as roadmap items rather than current capabilities.
+1. Lead with the hero image, product name, one-sentence purpose, and essential badges.
+2. Keep current capabilities separate from roadmap items.
+3. Never invent usage statistics, platform support, awards, or user counts.
+4. Keep Arabic and English long-form documentation separated into dedicated files.
+5. Use a limited number of strong visual elements instead of decorative clutter.
+6. Preserve old assets when removing them could break existing external links.
 
-## Current branded asset
+## Distinctive character
 
-`assets/ocr-desk-brand-cover.svg`
-
-This asset is designed to render directly inside GitHub and remain sharp at different viewport widths.
+OCR Desk should feel like a **precision document tool** rather than a generic AI application, security dashboard, or gaming interface. Its identity is built around scanning geometry, paper surfaces, and exact file-processing behavior.
 
 ---
 
-<div align="center">
-
-**Rad03i2 identity system · OCR Desk**
-
-</div>
+**Project:** OCR Desk  
+**Developer:** رضوان عبدالهادي · Radwan Abd alhady Ahmed  
+**GitHub:** [@rad03i2](https://github.com/rad03i2)

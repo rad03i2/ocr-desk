@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="assets/ocr-desk-brand-cover.svg" alt="OCR Desk — رضوان عبدالهادي أحمد" width="100%" />
+<img src="assets/project-cover.svg" alt="OCR Desk — رضوان عبدالهادي أحمد" width="100%" />
+
+<img src="assets/project-logo.svg" alt="OCR Desk logo" width="92" />
 
 # OCR Desk — الدليل العربي
 
@@ -8,8 +10,8 @@
 
 [![CI](https://github.com/rad03i2/ocr-desk/actions/workflows/ci.yml/badge.svg)](https://github.com/rad03i2/ocr-desk/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
-![Privacy](https://img.shields.io/badge/Privacy-Local--First-00CFEA)
-![License](https://img.shields.io/badge/License-MIT-35C98A)
+![Privacy](https://img.shields.io/badge/Privacy-Local--First-2563EB)
+![License](https://img.shields.io/badge/License-MIT-14213D)
 
 **[الصفحة الرئيسية](README.md) · [الدليل الإنجليزي](README_EN.md) · [خارطة الطريق](ROADMAP.md) · [الدعم](SUPPORT.md)**
 

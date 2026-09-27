@@ -2,6 +2,16 @@
 
 All notable project changes are documented here.
 
+## Unreleased
+
+### Repository presentation refresh
+- Introduced the Optical Grid / Editorial Technical visual identity.
+- Added a dedicated square project logo and a new vector hero cover.
+- Reworked the main README around verified capabilities, local-first privacy, safe output handling, tests, and current limitations.
+- Updated Arabic and English guide headers to use the new identity assets.
+- Restyled the terminal preview to match the new visual system.
+- Expanded the brand guide with palette, logo rules, cover usage, and repository presentation principles.
+
 ## 1.0.0 — Initial release
 
 ### Added

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">OCR Desk logo</title>
+  <desc id="desc">A document inside optical scan corners with a coral scan line.</desc>
+  <rect width="512" height="512" rx="112" fill="#F7F4EC"/>
+  <rect x="34" y="34" width="444" height="444" rx="92" fill="#14213D"/>
+  <rect x="74" y="74" width="364" height="364" rx="72" fill="#FFFDF8"/>
+
+  <path d="M132 184v-52h52M380 184v-52h-52M132 328v52h52M380 328v52h-52"
+        fill="none" stroke="#2563EB" stroke-width="24" stroke-linecap="round"/>
+
+  <path d="M204 136h94l58 58v180H204z" fill="#F1EEE6"/>
+  <path d="M298 136v58h58" fill="#D9D3C6"/>
+  <path d="M178 250h188" stroke="#F05A47" stroke-width="24" stroke-linecap="round"/>
+  <path d="M232 211h72M232 289h84M232 321h62" stroke="#14213D" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="176" cy="250" r="12" fill="#F05A47"/>
+  <circle cx="368" cy="250" r="12" fill="#F05A47"/>
+</svg>
